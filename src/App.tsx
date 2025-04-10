@@ -7,7 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
-const prefix = "cosmic-canvas-voyage/";
+const prefix = process.env.NODE_ENV === "development" ? "" : "cosmic-canvas-voyage/";
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
