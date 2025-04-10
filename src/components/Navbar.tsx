@@ -34,7 +34,7 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-2">
           <a href="#portfolio" className="nav-link">
-            Portfolio
+            Projetos
           </a>
           <a href="#clients" className="nav-link">
             Clientes
@@ -45,9 +45,6 @@ const Navbar = () => {
           <a href="#contact" className="nav-link">
             Contato
           </a>
-          <Button className="ml-4 bg-cosmic-purple hover:bg-cosmic-purple-light text-white">
-            Solicitar Orçamento
-          </Button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -94,9 +91,6 @@ const Navbar = () => {
           >
             Contato
           </a>
-          <Button className="bg-cosmic-purple hover:bg-cosmic-purple-light text-white">
-            Solicitar Orçamento
-          </Button>
         </nav>
       </div>
     </header>
