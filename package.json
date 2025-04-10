@@ -1,7 +1,8 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "cosmic-canvas-voyage",
   "private": true,
   "version": "0.0.0",
+  "homepage" : "cosmic-canvas-voyage/",
   "type": "module",
   "scripts": {
     "dev": "vite",
