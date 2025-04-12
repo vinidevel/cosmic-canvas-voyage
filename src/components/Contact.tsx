@@ -5,6 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -98,15 +100,24 @@ const ContactSection = () => {
             <div className="mt-8">
               <h4 className="text-white font-medium mb-4 text-center">Siga-nos</h4>
               <div className="flex gap-4 justify-center">
-                {['instagram', 'behance', 'linkedin', 'youtube'].map((social) => (
-                  <a
-                    key={social}
-                    href="#"
-                    className="bg-cosmic-blue/10 hover:bg-cosmic-purple/20 border border-cosmic-blue/20 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-200"
-                  >
-                    <img src={`https://via.placeholder.com/20?text=${social}`} alt={social} className="w-5 h-5" />
-                  </a>
-                ))}
+                <a
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-cosmic-blue/10 hover:bg-cosmic-purple/20 border border-cosmic-blue/20 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-200"
+                  title="LinkedIn"
+                >
+                  <FaLinkedin className="text-cosmic-purple-light w-5 h-5" />
+                </a>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-cosmic-blue/10 hover:bg-cosmic-purple/20 border border-cosmic-blue/20 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-200"
+                title="Instagram"
+                >
+                  <AiFillInstagram className="text-cosmic-purple-light w-5 h-5" />
+                </a>
               </div>
             </div>
           </div>

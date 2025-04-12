@@ -25,8 +25,8 @@ const Navbar = () => {
     >
       <div className="cosmic-container flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
-          <Star className="text-cosmic-purple-light h-6 w-6" />
-          <span className="text-xl font-bold bg-clip-text text-transparent bg-cosmic-highlight">
+        
+          <span className="text-3xl font-bold bg-clip-text text-transparent bg-cosmic-highlight">
             Cosmic Ocean
           </span>
         </a>
