@@ -44,6 +44,13 @@ const Hero = () => {
     }
   };
 
+  const scrollToContato = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div 
       ref={heroRef} 
@@ -68,7 +75,10 @@ const Hero = () => {
             >
               Ver Portfolio <Rocket className="ml-1" size={18} />
             </Button>
-            <Button variant="outline" className="border-cosmic-purple-light text-cosmic-purple-light hover:bg-cosmic-purple/10 px-6 py-6 text-lg">
+            <Button variant="outline" 
+            className="border-cosmic-purple-light text-cosmic-purple-light hover:bg-cosmic-purple/10 px-6 py-6 text-lg"
+            onClick={scrollToContato}
+            >
               Contato
             </Button>
           </div>
